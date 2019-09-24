@@ -5,84 +5,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coordinator Storytelling - Bountiful</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
         <div class="container">
             <header>
-                <h1>BOUNTIFUL</h1>
-                <h2>Children's Foundation</h2>
                 <nav>
+                    <h1>BOUNTIFUL<br>Children's Foundation</h1>
+                    
                     <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Our Stories</a>
-                    <a href="#">Contact Us</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#our-stories">Our Stories</a>
+                    <a href="#contact">Contact Us</a>
                     <a href="#">Donate</a>
                 </nav>
             </header>
 
+            
             <section>
                 <div class="login-box">
-                    <h1>Sign Up</h1>
-                    <input type="text" name="Username" placeholder="Username"/>
-                    <input type="text" name="Password" placeholder="Password"/>
-                    <input type="text" name="Email" placeholder="Email"/>
+                    <h1>Welcome to Bountiful Children's Foundation <br>Sign Up here to create your profile.</h1>
                     <input type="submit" name="Sign-up button" value="Sign Up"/>
-                 </div>
+                </div> <!--login-box-->
+
+                <div class="bottom-section">
+                    <p>"Giving is not just about making a donation. <br>It is about making a difference." <br> - Kathy Calvin</p>
+                    <input type="submit" name="Donate button" value="DONATE"/>
+                </div><!--bottom-section-->
+                
+                 
             </section>
 
             <section>
+                    <h2>Giving more to help Children!</h2>
                 <div class="main-content">
-                    <h1>Giving more to help Children throughout the World!</h1>
+                    
                     <p>We were inspired to help change this. The United Nations World Food Program considers hunger "one of the most solvable problems that face the world today." We believe that by giving children the nutrition they need to thrive and reach their potential, we will be making a positive impact on the world for generations to come.</p>
                     <img src="images/kids.jpg" alt="Children's Image">
+                </div> <!----main-content-->
+
+                <div class="middle">
+                    <h1 id="our-stories">Our Stories</h1>
+                    <div class="middle-section">
+                        <div class="text-section">
+                            <h3>Giving Back to the community</h3>
+                            <img class="giving-hand" src="images/giving.jpg" alt="Two hands with full of coins">
+                            <p>We met children in several remote communities in the Maasai Mara region of Kenya where our dolls provide school meals to over 6,750 children in nine schools. The children we met were intelligent, full of potential, and they welcomed us with open arms and hearts.</p>
+                            <button>DONATE</button>
+                        </div>
+
+                        <div class="text-section">
+                            <h3>Building Our Community</h3>
+                            <img src="images/together.jpg" alt="Together, We create-written in wall">
+                            <p>We saw, first-hand, the very real and meaningful impact our supporters’ purchases are making.  Together, we are improving the lives and futures of thousands of children, their families and communities. Thank you from the bottom of our hearts!</p>
+                            <button>Donate</button>
+                        </div>  
+                    </div> <!--middle-section-->
                 </div>
 
-                <h2>Our Stories</h2>
-                <div class="middle-section">
-                    <h3>Giving Back to the community</h3>
-                    <img class="giving-hand" src="images/giving.jpg" alt="Two hands with full of coins">
-                    <p>We met children in several remote communities in the Maasai Mara region of Kenya where our dolls provide school meals to over 6,750 children in nine schools. The children we met were intelligent, full of potential, and they welcomed us with open arms and hearts.</p>
-                    <button>CLICK TO DONATE</button>
-
-                    <h3>Building Our Community</h3>
-                    <img src="images/together.jpg" alt="Together, We create-written in wall">
-                    <p>We saw, first-hand, the very real and meaningful impact our supporters’ purchases are making.  Together, we are improving the lives and futures of thousands of children, their families and communities. Thank you from the bottom of our hearts!</p>
-                    <button>Click To Donate</button>
-                </div>
-
-                <div class="bottom-section">
+                <!-- <div class="bottom-section">
                     <p>"Giving is not just about making a donation.</p>
                     <p>It is about making a difference."</p>
                     <p>Kathy Calvin</p>
-                </div>
+                </div>bottom-section -->
 
-                <div class="contact">
+                <div id="contact">
                     <address>
+                        <h3>Contact:</h3>
                         123 Window Street
-                        Orange, Texas 77086
-                        Phone number: (000)-000-0000
+                        Orange, Texas 77086 <br>
+                        Phone number: (000)-000-0000 <br>
                         <a href="poudyalashim@gmail.com">poudyalashim@gmail.com</a>
                     </address>
-                </div>
+                </div> <!--contact-->
             </section>
 
-            <footer>
+            <!-- <footer>
                <span>Copyright 2019</span> 
-            </footer>
-
-
-
-
-
-
-
-
-
-
-        </div>
+            </footer> -->
+         </div> <!--container-->
     </body>
 </html>
