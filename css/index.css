@@ -344,6 +344,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-image: url("../images/white.jpg");
+  box-shadow: 5px 15px 5px black;
 }
 img {
   width: 30%;
@@ -355,13 +357,54 @@ nav {
   margin-top: 5%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+  }
+}
 nav h1 {
+  border: 1px black solid;
   margin-right: 13%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    margin-left: 20%;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  nav h1 {
+    margin-left: 20%;
+    font-size: 2.4rem;
+  }
+}
 nav a {
   margin-top: 3%;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav a {
+    margin-bottom: 4%;
+  }
+}
+@media (max-width: 700px) {
+  nav a {
+    margin-bottom: 4%;
+  }
 }
 .login-box {
   display: flex;
@@ -405,16 +448,34 @@ nav a {
 .main-content {
   display: flex;
 }
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
 .main-content p {
   padding: 0 4% 0 1.6%;
+  margin-top: 1%;
 }
 .main-content img {
   margin-right: 3%;
   margin-top: 2.5%;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .main-content img {
+    width: 100%;
+  }
+}
 h2 {
   padding-left: 3%;
+}
+@media (max-width: 500px) {
+  h2 {
+    text-align: center;
+    padding-bottom: 2px;
+    margin-top: 8%;
+  }
 }
 .middle {
   margin-top: 5%;
@@ -428,6 +489,16 @@ h2 {
 }
 .middle .middle-section {
   display: flex;
+}
+@media (max-width: 500px) {
+  .middle .middle-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .middle .middle-section .text-section {
+    padding-top: 2px;
+  }
 }
 .middle .middle-section .text-section h3 {
   font-size: 2rem;
@@ -444,13 +515,19 @@ h2 {
   padding: 0 6%;
 }
 .middle .middle-section .text-section button {
+  color: white;
+  background: blue;
+  font-size: 1.5rem;
   margin-bottom: 15%;
   padding: 2% 5%;
-  font-size: 1.5rem;
   margin-left: 4%;
   border-radius: 10px;
-  background: #0c09a7;
-  color: white;
+}
+@media (max-width: 500px) {
+  .middle .middle-section .text-section button {
+    padding: 2% 15%;
+    margin-left: 30%;
+  }
 }
 #contact address {
   display: flex;
@@ -458,4 +535,102 @@ h2 {
   font-size: 1.6rem;
   margin: 4% 0;
   line-height: 1.6;
+}
+@media (max-width: 500px) {
+  #contact address {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  #contact address {
+    text-align: center;
+  }
+}
+.about-us {
+  border-bottom: 1px grey dashed;
+  background-image: url("../images/abt-background.jpg");
+  padding: 65px 0;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.about-us h1 {
+  font-size: 6rem;
+}
+.backend {
+  display: flex;
+  border: 1px red solid;
+}
+@media (max-width: 500px) {
+  .backend {
+    flex-direction: column;
+  }
+}
+.backend .backend-one {
+  padding-left: 5%;
+}
+@media (max-width: 500px) {
+  .backend .backend-one {
+    border: 1px black solid;
+  }
+}
+.backend .backend-two {
+  padding-left: 15%;
+}
+.backend img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .backend img {
+    width: 100%;
+  }
+}
+.react {
+  display: flex;
+  border: 1px red solid;
+}
+@media (max-width: 500px) {
+  .react {
+    flex-direction: column;
+  }
+}
+.react .react-one {
+  padding-left: 5%;
+}
+.react .react-two {
+  padding-left: 15%;
+}
+.react .react-two img {
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .react .react-two img {
+    width: 100%;
+  }
+}
+.react img {
+  width: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .react img {
+    width: 100%;
+  }
+}
+.ui-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px green solid;
+}
+.ui-one img {
+  width: 30%;
+  height: 30%;
+  border-radius: 80%;
+}
+@media (max-width: 500px) {
+  .ui-one img {
+    width: 100%;
+  }
 }

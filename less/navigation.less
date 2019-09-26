@@ -5,17 +5,55 @@ nav {
     margin-top: 5%;
     margin-bottom: 2%;
     
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4%;
+    }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4%;
+        
+    }
+
+
 
     h1{
-        // border: 1px black solid;
+        border: 1px black solid;
         margin-right: 13%;
         font-size: 1.6rem;
+        
+
+        @media @mobile {
+            margin-left: 20%;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        @media @tablet {
+            margin-left: 20%;
+            font-size: 2.4rem;
+        }
     }
 
     a {
         margin-top: 3%;
         // border: 1px black solid;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+        text-decoration: none;
+
+
+        @media @mobile {
+            margin-bottom: 4%;
+        }
+
+        @media @tablet {
+            margin-bottom: 4%;
+        }
     }
 }
 

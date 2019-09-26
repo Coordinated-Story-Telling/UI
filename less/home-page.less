@@ -50,20 +50,35 @@
 .main-content {
     display: flex;
 
+    @media @mobile {
+        flex-direction: column;
+    }
+
     p {
         padding: 0 4% 0 1.6%;
+        margin-top: 1%;
     }
 
     img {
         margin-right: 3%;
         margin-top: 2.5%;
         width: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 }
 
 h2 {
     // border: 1px black solid;
     padding-left: 3%;
+
+    @media @mobile {
+        text-align: center;
+        padding-bottom: 2px;
+        margin-top: 8%;
+    }
 }
 
 
@@ -72,7 +87,6 @@ h2 {
 
     h1 {
         text-align: center;
-        // border: 1px red solid;
         margin: 4% 35%;
         background: orange;
         box-shadow: 5px 15px 6px pink;
@@ -82,10 +96,16 @@ h2 {
     .middle-section {
         // border: 1px black solid;
         display: flex;
-        
+
+        @media @mobile {
+            flex-direction: column;
+        }
 
         .text-section {
            
+            @media @mobile {
+                padding-top: 2px;
+            }
 
             h3 {
                 font-size: 2rem;
@@ -105,13 +125,18 @@ h2 {
             }
 
             button {
+                .up(white, blue, 1.5rem);
                 margin-bottom: 15%;
                 padding: 2% 5%;
-                font-size: 1.5rem;
                 margin-left: 4%;
                 border-radius: 10px;
-                background: rgb(12, 9, 167);
-                color: white;
+                
+                
+
+                @media @mobile {
+                    padding: 2% 15%;
+                    margin-left: 30%;
+                }
             }
         }
        
@@ -124,6 +149,14 @@ h2 {
     font-size: 1.6rem;
     margin: 4% 0;
     line-height: 1.6;
+
+    @media @mobile {
+        text-align: center;
+    }
+
+    @media @tablet {
+        text-align: center;
+    }
 }
 
 

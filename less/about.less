@@ -1,0 +1,96 @@
+.about-us {
+    border-bottom: 1px grey dashed;
+    background-image: url("../images/abt-background.jpg");
+    padding: 65px 0;
+    text-align: center;
+    margin-bottom: 5%;
+
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+.backend {
+    display: flex;
+    border: 1px red solid;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    .backend-one {
+        padding-left: 5%;
+
+        @media @mobile {
+            border: 1px black solid;
+            
+        }
+    }
+
+    .backend-two {
+        padding-left: 15%;
+    }
+
+    img {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}
+
+.react {
+    display: flex;
+    border: 1px red solid;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    .react-one {
+        padding-left: 5%;
+    }
+
+    .react-two {
+        padding-left: 15%;
+
+        img {
+            width: 80%;
+
+            @media @mobile {
+                width: 100%;
+            }
+        }
+    }
+
+    img {
+        width: 50%;
+        border-radius: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}
+
+.ui-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px green solid;
+    
+
+    img {
+        width: 30%;
+        height: 30%;
+        
+        border-radius: 80%;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}
