@@ -365,7 +365,7 @@ nav {
     margin-bottom: 4%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -377,6 +377,7 @@ nav h1 {
   border: 1px black solid;
   margin-right: 13%;
   font-size: 1.6rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   nav h1 {
@@ -385,7 +386,7 @@ nav h1 {
     text-align: center;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   nav h1 {
     margin-left: 20%;
     font-size: 2.4rem;
@@ -401,7 +402,7 @@ nav a {
     margin-bottom: 4%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   nav a {
     margin-bottom: 4%;
   }
@@ -541,7 +542,7 @@ h2 {
     text-align: center;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #contact address {
     text-align: center;
   }
@@ -558,7 +559,6 @@ h2 {
 }
 .backend {
   display: flex;
-  border: 1px red solid;
 }
 @media (max-width: 500px) {
   .backend {
@@ -569,9 +569,6 @@ h2 {
   padding-left: 5%;
 }
 @media (max-width: 500px) {
-  .backend .backend-one {
-    border: 1px black solid;
-  }
 }
 .backend .backend-two {
   padding-left: 15%;
@@ -588,7 +585,6 @@ h2 {
 }
 .react {
   display: flex;
-  border: 1px red solid;
 }
 @media (max-width: 500px) {
   .react {
@@ -622,15 +618,17 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px green solid;
 }
 .ui-one img {
-  width: 30%;
-  height: 30%;
-  border-radius: 80%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
   .ui-one img {
-    width: 100%;
+    width: 50%;
   }
+}
+.git-icon {
+  font-size: 25px;
 }
