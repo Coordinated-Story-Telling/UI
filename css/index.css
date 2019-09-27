@@ -396,6 +396,10 @@ nav a {
   font-size: 1.7rem;
   text-decoration: none;
 }
+nav a:hover {
+  color: white;
+  background: black;
+}
 @media (max-width: 500px) {
   nav a {
     margin-bottom: 4%;
@@ -429,6 +433,10 @@ nav a {
   font-size: 1.7rem;
   background: #f1b578;
 }
+.login-box input[type="submit"]:hover {
+  color: blue;
+  background: pink;
+}
 .bottom-section {
   font-family: 'Indie Flower', cursive;
   padding-left: 10%;
@@ -444,6 +452,10 @@ nav a {
   font-size: 1.7rem;
   background: #151616;
   color: white;
+}
+.bottom-section:hover {
+  color: red;
+  background: orange;
 }
 .main-content {
   display: flex;
@@ -522,6 +534,10 @@ h2 {
   padding: 2% 5%;
   margin-left: 4%;
   border-radius: 10px;
+}
+.middle .middle-section .text-section button:hover {
+  color: red;
+  background: orange;
 }
 @media (max-width: 500px) {
   .middle .middle-section .text-section button {
